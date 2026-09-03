@@ -1,6 +1,6 @@
 #PARTE 2: Estruturas de Dados (JSON/Dicionários)
 
-#3. Modelagem de Produto: No back-end, os dados trafegam como JSON (Dicionários em
+#exercicio 3. Modelagem de Produto: No back-end, os dados trafegam como JSON (Dicionários em
 
 #Python). Crie uma lista chamada estoque contendo 3 dicionários. Cada dicionário deve
 #representar um produto com as chaves: id, nome, quantidade e preco.
@@ -8,29 +8,20 @@
 #● Imprima no terminal apenas o nome do segundo produto da lista.
 
 estoque = [
-    {"id": 1, "nome": "sapato", "quantidade": 5, "preco": 100},
-    {"id": 2, "nome": "bola", "quntidade": 10, "preco": 50},
-    {"id": 3, "nome": "chinelo", "quntidade": 5, "preco": 35}
+    {"id": 1, "nome": "sapato", "quantidade": 5, "preco": 100.00},
+    {"id": 2, "nome": "bola", "quantidade": 10, "preco": 50.00},
+    {"id": 3, "nome": "chinelo", "quantidade": 5, "preco": 35.00}
 ]
 
-novo_produto = str(input("adcione um novo produto na lista: "))
-novo_preco = float(input("digite um preco para este esse produto: "))
-novo_quantidade = int(input("digite a quantiade deste produto: "))
+estoque.append({"id": len(estoque)+1, "nome": "bicicleta", "quantidade": 20, "preco": 800.00},)
 
-novo_produto = { 
-    "id": 4,
-    "nome": novo_produto,
-    "quantidade": novo_quantidade,
-    "preco": novo_preco
-}
+print(estoque[1]["nome"])
 
-estoque.append(novo_produto)
-print(estoque)
+#print(len(estoque))
 
-print("nome do segundo produto:", estoque[1]["nome"])
 
-#4. Atualização de Status: Imagine que recebeu um objeto de um serviço de entrega:
-#Python
+#exercicio 4. Atualização de Status: Imagine que recebeu um objeto de um serviço de entrega:
+#Python 
 #pedido = {
 #"cliente": "João Silva",
 #"prato": "Hambúrguer Artesanal",

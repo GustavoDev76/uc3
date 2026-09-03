@@ -1,6 +1,6 @@
 #PARTE 1: Condicionais e Regras de Negócio
 
-#1. Validador de Checkout: Crie um programa que simule a finalização de uma compra num:
+#exercicio 1. Validador de Checkout: Crie um programa que simule a finalização de uma compra num:
 
 #-commerce. O sistema deve receber:
 #● valor_total (float)
@@ -34,7 +34,7 @@ else:
     print("402 Payment Required - Saldo Insuficiente")
 
 
-#2. Verificador de Acesso (Login): Crie uma lógica simples de autenticação. Defina duas
+#exercicio 2. Verificador de Acesso (Login): Crie uma lógica simples de autenticação. Defina duas
 #variáveis fixas: username_cadastrado = "admin" e senha_cadastrada = "1234".
 #Em seguida, use o input() para receber um nome de usuário e uma senha do teclado.
 #● Se ambos forem iguais aos cadastrados, exiba: "Acesso concedido".
