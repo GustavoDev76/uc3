@@ -42,6 +42,8 @@ ar_condicionado.ligar()
 ar_condicionado.desligar()
 
 ar_condicionado.aumentar_temperatura()
+ar_condicionado.aumentar_temperatura()
+
 ar_condicionado.diminuir_temperatura()
 
 print(f"Ligado: {ar_condicionado.ligado}")
